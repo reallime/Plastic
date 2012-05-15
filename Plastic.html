@@ -7,7 +7,7 @@
 </head>
 <body>
 	<input id="cc" value="4111-1111-1111-1111"/>
-    <input id="button" type="button" value="Verify"/>
+    <button type="button">Verify</button>
     <div id="result"></div>
 
 	<script>
@@ -62,7 +62,7 @@
             output.text("Invalid Credit Card");
         }
     });
-    $('#button').click(function () {
+    $('button').click(function () {
         cc.change();
     });
 </script>
