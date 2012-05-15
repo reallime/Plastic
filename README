@@ -1,0 +1,24 @@
+Plastic allows you to check if credit card numbers were entered correctly.
+
+Example:
+
+var Card = new Plastic('4111-1111-1111-1111');
+
+Card.isValid();
+//True
+
+Card.type();
+//visa
+
+Card.number();
+//removes spaces and alpha characters
+//4111111111111111
+
+Card.isLuhnMatch();
+//Could be used to display custom error messages
+//True
+
+Plastic does not depend on any JavaScript frameworks
+You can modify the cc object to add support for more credit card types
+
+Plastic is not a substitude for server side validation!
