@@ -23,7 +23,7 @@ function Plastic(cardNumber){
 	}
 
 	self.type = function() {
-		for (card in cc) {
+		for (var card in cc) {
 			if ( cc[card].test(self.number()) ){
 				return card;
 			}
